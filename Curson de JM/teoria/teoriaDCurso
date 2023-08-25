@@ -22,4 +22,27 @@ debajo de los elementos de referencia
 
         Selectores de atributos
 
-Nos van a permitir aplicar estilos tomando como referencia cualquier atributo 
+Nos van a permitir aplicar estilos tomando como referencia cualquier atributo
+
+flex-box 
+
+css-tricks
+
+Descargar en visual studio :  download css flexbox cheatsheet
+
+
+nowrap = Envuelve todos los elementos en una sola linea 
+
+row wrap
+
+Align-items
+        -- Define la alineacion de los hijos en ele jen transversal
+        -- Funciona cuando  es no wrap 
+        -- Funciona cuando los hijos esten en una sola linea
+
+
+Align-Content
+
+        -- Define la alineacion de los hijos en el eje transversial
+        -- No funciona cuando los hijos esten en una sola linea
+        -- Funciona unicamente cuandl el valor es wrap o wrap-revere

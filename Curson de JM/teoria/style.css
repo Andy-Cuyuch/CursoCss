@@ -1,0 +1,112 @@
+/*
+    Comentarios > Clase 
+
+    Display : flex >  Es una caja flexible que trabajo
+    en bloque (Es una caja de flexblox que trabaja en bloque)
+
+    Display : inlene-flex  > Los contenedores ocuparan el ancho 
+    que necesiten (Es una caja de flexblox que trabaja en linea)
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+.center-text h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.container{
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    /*Valor que lo determina : row y column [row-reverse][column-reverse]*/
+    flex-direction: column;
+     /*La caja va a alinear a todos uss hijos en una sola linea*/
+    /* flex-wrap: nowrap; */
+
+    /*Envuelve y contiene a todos los contenedores hijos*/
+    flex-wrap: wrap;
+}
+
+.contenido{
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hero{
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.heroDos{
+    background-color: #333;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+
+.heroTres{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    flex-wrap: wrap;
+}
+
+.heroCuatro{
+    background-color: #333;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 30vh;
+    flex-wrap: wrap;
+}
+
+.contenido2{
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contenido3{
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenido4{
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenido5{
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.item{
+    border: medium solid #999;
+    width: 20%;
+    height: 20%;
+    background-color: blue;
+}
+
+/*Flex-direction*/
