@@ -15,6 +15,11 @@ Ejemplo : atributo : valor;  atributo-de-mas-palabras: otro-valor;
 2) identificadores - atributo id-#
 3) Clases - atributo class -.
 
+        Selectores de hermanos
+
+Los selectores de hermanos van aplicar a los elementos que son hermanos y que estan 
+debajo de los elementos de referencia
+
         Selectores de atributos
 
 Nos van a permitir aplicar estilos tomando como referencia cualquier atributo 
