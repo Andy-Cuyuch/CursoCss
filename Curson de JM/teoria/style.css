@@ -25,12 +25,13 @@
     height: 30vh;
     display: flex;
     /*Valor que lo determina : row y column [row-reverse][column-reverse]*/
-    flex-direction: column;
+    flex-direction: row;
      /*La caja va a alinear a todos uss hijos en una sola linea*/
-    /* flex-wrap: nowrap; */
-
-    /*Envuelve y contiene a todos los contenedores hijos*/
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
 }
 
 .contenido{
@@ -108,5 +109,30 @@
     height: 20%;
     background-color: blue;
 }
+
+.item2{
+    border: medium solid #999;
+    /*Es la habilidad  o el facto de crecer, valor por defecto es  (no se aceptan valores negativos)
+        ejemplo  del uso  : Cuando la caja flexbox tenga espacios sobrante 
+    */
+    flex-grow: 0;
+
+    /* Es todo lo contrario a flex-grow :  Es la habilidad o el facto de encogerse, 
+        Ejemplo : Cuando la caja flexbox no tenga espacios sobrantes    
+        valor por defecto es 1, No se aceptan valores negativos 
+    */
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: blue;
+}
+
+/*
+    Modificamos el factor de crecimiento al item 2 
+*/
+/* .item2:nth-child(2){
+    flex-grow: 3;
+} */
+
+
 
 /*Flex-direction*/

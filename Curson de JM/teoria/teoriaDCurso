@@ -30,14 +30,43 @@ css-tricks
 
 Descargar en visual studio :  download css flexbox cheatsheet
 
+/*Flexbox*/
 
-nowrap = Envuelve todos los elementos en una sola linea 
+1.flex-direction : Constrolan la direccion de los elementos 
 
-row wrap
+        -- Se utiliza en el contexto de flexbox para controlar la direccion 
+        en la que se colocan los elementos flexibles dentro del contenedor principal.
+        estos deciden si se colocan en fila o columna. 
+
+:: Flex-direction tiene cuatro valores posibles 
+
+        -- row (valor predeterminado) estas se colocan en fila  ---
+        -- row-reverse estas las colocan en fila pero al reves ----
+
+        --column los elementos se colocan de manera flexible 
+        --column-reverse Siminlar al column solo que los coloca al reves 
+
+
+2. Flex-wrap: wrap
+
+        -- Es un propiedad en el contexto flexbox para controlar como 
+           se comportan los elementos flexibles cuando no tiene sufieciente 
+           espacio disponibleen el contenedor principal para acomodarlos 
+           en una sola fila o columna
+
+:: La propiedad flex-wrap tiene tres tipos de valores 
+
+        -- nowrap (Valor predeterminado) esto significa que los elementos 
+           flexibles no se envolveran en una fila o columna cuando 
+           no haya suficiente espacio.
+            (En su lugar los elementos se encogeran o se desbordaran del contenor principal)
+
+        -- wrap : Con este valor los elementos flexibles se envolveran a una fila o colummna cuando no haya suficiente espacio horizontal 
+        o vertical disponible en el contenedor principal 
 
 Align-items
         -- Define la alineacion de los hijos en ele jen transversal
-        -- Funciona cuando  es no wrap 
+        -- Funciona cuando  es no wrap (wrap)
         -- Funciona cuando los hijos esten en una sola linea
 
 
@@ -46,3 +75,39 @@ Align-Content
         -- Define la alineacion de los hijos en el eje transversial
         -- No funciona cuando los hijos esten en una sola linea
         -- Funciona unicamente cuandl el valor es wrap o wrap-revere
+
+justify-content
+
+        -- Se utiliza en el contexto de Flexbox para controlar cómo se distribuyen 
+        los elementos flexibles a lo largo del eje principal del contenedor
+
+
+
+Flex-grow: 
+
+        -- Es la habilidad de el factor de crecer, valor por defecto es 0 NO se aceptan valores negativos
+
+        Ejemplo : Cuando la caja flexbox tenga espacio sobrante
+
+Flex-shrink : 
+
+        -- Es la habilidad o el factor de encogerse , valor por defecto es 1, No aceptan valores negativos 
+
+        Ejemplo : Cuando la caja flexbox NO tenga espacio sobrante 
+
+Flex-basis 
+
+        -- Es el tamaño del elemento hijo dentro de la linea de la caja flexbox
+        -- Si la caja flexbox tiene direccion de fila, flex-basis representa el width
+        -- Si la caja flexbox tiene direccion de colummna, flex-basis represetna el height
+        valor por defecto auto 
+
+        -- define cuánto espacio inicial debe ocupar un elemento flexible dentro de su contenedor. 
+
+        La propiedad CSS flex-basis se utiliza en el contexto de Flexbox para establecer el tamaño base de un elemento flexible antes de que se distribuyan los espacios disponibles o se considere el valor de crecimiento (flex-grow) y el valor de encogimiento (flex-shrink) del elemento. En otras palabras, flex-basis define cuánto espacio inicial debe ocupar un elemento flexible dentro de su contenedor.
+
+Order : 
+
+        -- Representa el orden que tendra los elementos hijos en la caja flexbox 
+        -- Sin embargo, la propiedad order permite reorganizar los elementos flexibles según un orden personalizado.
+        
